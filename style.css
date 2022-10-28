@@ -1,28 +1,82 @@
-/*Import Font from Google Fonts*/
+
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 
-/*insert Default font for the Page as well background Color for the Mainbody page*/
-
-body 
-{
-  font-family: "Poppins";
-  Margin: 0;
-  background-color: #000000;
-  color: #ffffff;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  background: black;
 }
+
+.center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.ring {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+  0% {
+      transform: rotate(0deg);
+      box-shadow: 1px 5px 2px #e65c00;
+  }
+
+  50% {
+      transform: rotate(180deg);
+      box-shadow: 1px 5px 2px #18b201;
+  }
+
+  100% {
+      transform: rotate(360deg);
+      box-shadow: 1px 5px 2px #0456c8;
+  }
+}
+
+.ring:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+
+span {
+  color: #737373;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 200px;
+  animation: text 3s ease-in-out infinite;
+}
+
+@keyframes text {
+  50% {
+      color: black;
+  }
+}
+
 
 /*Make the Page full witdh*/
-body
-{
+body{
   Margin: 0;
 }
-
 
 /* ---------------------------------------------------------------------------------------------------------*/
 
 /*Footer Box Configuration*/
-footer
-{
+footer{
   font-family: "Poppins";
   height: 60px;
   padding: 0;
@@ -30,20 +84,103 @@ footer
 }
 
 /*Footer Box Text Configuration*/
-footer p
-  {
+footer p{
   padding-top: 10px;
   margin: 25px;
   text-align: center;
   color: #ffffff;
-  }
+}
 
-footer p strong
-  {
+footer p strong{
   color: #86BC40;
-  }
+}
 
 /* ---------------------------------------------------------------------------------------------------------*/
+
+.blankspace-25px
+{
+  padding: 25px;
+  background-color: #000000;
+  Margin:0 !important;
+}
+
+.blankspace-35px-homebox
+{
+  padding: 35px;
+  Margin:0 !important;
+}
+
+.blankspace-15px
+{
+  padding: 15px;
+  background-color: #000000;
+  Margin:0 !important;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------*/
+/*Home page Box Configuration*/
+
+#homebox-row
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /*Allign any screen*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#homelink
+{
+ text-decoration: none;
+}
+
+#homepage-box p
+{
+    font-size: 24px;
+}
+
+#homepage-box
+{
+  width: 300px;
+  height: 375px;
+  padding-top: 25px;
+  background-color: #262626;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  box-shadow: 4px 3px 8px 1px #969696;
+  -webkit-box-shadow: 4px 3px 8px 1px #969696;
+}
+
+#homepage-box:hover
+{
+  width: 300px;
+  height: 375px;
+  padding-top: 25px;
+  background-color: #262626;
+  color: #86BC40;
+  text-align: center;
+}
+
+#homepage-box-hide
+{
+display: none;
+}
+
+/*Style for all Icons*/
+.fas
+{
+  margin: 20px;
+  font-size: 64px;
+}
 
 .menu
 {

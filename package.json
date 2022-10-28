@@ -1,0 +1,22 @@
+{
+  "name": "entrega-coderhouse-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafoMello/Entrega-CoderHouse-HTML.git"
+  },
+  "keywords": [
+    "coderhouse"
+  ],
+  "author": "Rafael Mello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafoMello/Entrega-CoderHouse-HTML/issues"
+  },
+  "homepage": "https://github.com/RafoMello/Entrega-CoderHouse-HTML#readme"
+}
